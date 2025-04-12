@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МирТур | Незабываемые путешествия</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fas fa-globe-americas"></i>
+          <h1>Мир<span>Тур</span></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#destinations">Направления</a></li>
+          <li><a href="#tours">Туры</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Откройте для себя<br>мир новых впечатлений</h1>
+        <p>Уникальные туры и индивидуальные маршруты в любую точку мира. Организуем отдых вашей мечты с заботой о каждой детали.</p>
+        <div class="cta-buttons">
+          <a href="#tours" class="btn primary">Выбрать тур</a>
+          <a href="#contact" class="btn secondary">Индивидуальный маршрут</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-search">
+      <div class="container">
+        <div class="search-box">
+          <h2>Найти идеальный тур</h2>
+          <form class="search-form">
+            <div class="form-group">
+              <label for="destination">Направление</label>
+              <select id="destination">
+                <option value="">Выберите направление</option>
+                <option value="europe">Европа</option>
+                <option value="asia">Азия</option>
+                <option value="africa">Африка</option>
+                <option value="namerica">Северная Америка</option>
+                <option value="samerica">Южная Америка</option>
+                <option value="australia">Австралия и Океания</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Дата отправления</label>
+              <input type="date" id="date">
+            </div>
+            <div class="form-group">
+              <label for="duration">Продолжительность</label>
+              <select id="duration">
+                <option value="">Выберите продолжительность</option>
+                <option value="1-3">1-3 дня</option>
+                <option value="4-7">4-7 дней</option>
+                <option value="8-14">8-14 дней</option>
+                <option value="15+">15+ дней</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="travelers">Количество путешественников</label>
+              <select id="travelers">
+                <option value="1">1 человек</option>
+                <option value="2">2 человека</option>
+                <option value="3-4">3-4 человека</option>
+                <option value="5+">5 и более</option>
+              </select>
+            </div>
+            <button type="submit" class="btn primary">Искать туры</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations" class="container">
+    <div class="section-header">
+      <h2>Популярные направления</h2>
+      <p>Откройте для себя уникальные места с нашими эксклюзивными турами</p>
+    </div>
+    
+    <div class="destinations-grid">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Париж">
+          <div class="destination-overlay">
+            <h3>Париж</h3>
+            <p>Франция</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Бали">
+          <div class="destination-overlay">
+            <h3>Бали</h3>
+            <p>Индонезия</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1543429776-2782fc8e1acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Нью-Йорк">
+          <div class="destination-overlay">
+            <h3>Нью-Йорк</h3>
+            <p>США</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Венеция">
+          <div class="destination-overlay">
+            <h3>Венеция</h3>
+            <p>Италия</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1528092744838-b91de0a10615?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Токио">
+          <div class="destination-overlay">
+            <h3>Токио</h3>
+            <p>Япония</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Сантьяго">
+          <div class="destination-overlay">
+            <h3>Сантьяго</h3>
+            <p>Чили</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-all">
+      <a href="#" class="btn primary">Смотреть все направления</a>
+    </div>
+  </section>
+
+  <section id="tours">
+    <div class="container">
+      <div class="section-header">
+        <h2>Популярные туры</h2>
+        <p>Выберите готовый тур или создайте свой уникальный маршрут</p>
+      </div>
+      
+      <div class="tours-filter">
+        <button class="filter-btn active" data-filter="all">Все туры</button>
+        <button class="filter-btn" data-filter="adventure">Приключения</button>
+        <button class="filter-btn" data-filter="beach">Пляжный отдых</button>
+        <button class="filter-btn" data-filter="cultural">Культурный</button>
+        <button class="filter-btn" data-filter="luxury">Премиум</button>
+      </div>
+      
+      <div class="tours-grid">
+        <div class="tour-card" data-category="beach luxury">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Райский отдых на Мальдивах">
+            <span class="tour-label">Премиум</span>
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Пляжный отдых</span>
+              <span>Премиум</span>
+            </div>
+            <h3>Райский отдых на Мальдивах</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 10 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 6 человек</span>
+              <span><i class="fas fa-star"></i> 4.9 (128)</span>
+            </div>
+            <p class="tour-description">Незабываемый отдых в роскошном отеле на берегу лазурного океана. Белоснежные пляжи, коралловые рифы и спа-процедуры.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 250 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tour-card" data-category="cultural">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1541343672885-9be56236302a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Культурная Италия">
+            <span class="tour-label">Популярный</span>
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Культурный</span>
+              <span>Экскурсионный</span>
+            </div>
+            <h3>Культурная Италия: Рим, Флоренция, Венеция</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 8 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 12 человек</span>
+              <span><i class="fas fa-star"></i> 4.8 (96)</span>
+            </div>
+            <p class="tour-description">Погрузитесь в атмосферу итальянской истории и искусства. Посетите знаменитые музеи, площади и соборы трех главных городов Италии.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 120 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tour-card" data-category="adventure">
+          <div class="tour-image">
+            <img src="https://avatars.mds.yandex.net/i?id=b37182486cc1de542eb17a4ae3552053_l-5327796-images-thumbs&n=13" alt="Треккинг в Непале">
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Приключения</span>
+              <span>Треккинг</span>
+            </div>
+            <h3>Треккинг в Непале: путь к базовому лагерю Эвереста</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 15 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 8 человек</span>
+              <span><i class="fas fa-star"></i> 4.9 (74)</span>
+            </div>
+            <p class="tour-description">Незабываемое путешествие через традиционные шерпские деревни, буддистские монастыри и горные перевалы к подножию высочайшей вершины мира.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 180 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tour-card" data-category="beach">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Экзотический Таиланд">
+            <span class="tour-label">Скидка 15%</span>
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Пляжный отдых</span>
+              <span>Экскурсии</span>
+            </div>
+            <h3>Экзотический Таиланд: Бангкок и Пхукет</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 12 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 10 человек</span>
+              <span><i class="fas fa-star"></i> 4.7 (112)</span>
+            </div>
+            <p class="tour-description">Идеальное сочетание городских приключений в столице Таиланда и расслабляющего пляжного отдыха на острове Пхукет.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 110 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tour-card" data-category="cultural adventure">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Сафари в Танзании">
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Приключения</span>
+              <span>Сафари</span>
+            </div>
+            <h3>Сафари в Танзании: Серенгети и Килиманджаро</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 11 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 6 человек</span>
+              <span><i class="fas fa-star"></i> 5.0 (58)</span>
+            </div>
+            <p class="tour-description">Наблюдайте за дикой природой в ее естественной среде обитания в национальном парке Серенгети и посетите подножие знаменитой горы Килиманджаро.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 220 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tour-card" data-category="luxury cultural">
+          <div class="tour-image">
+            <img src="https://avatars.mds.yandex.net/i?id=8fdccc0fad0a99b9477da92337b6c646_l-4079452-images-thumbs&n=13" alt="Великолепная Япония">
+            <span class="tour-label">Новинка</span>
+          </div>
+          <div class="tour-details">
+            <div class="tour-tags">
+              <span>Культурный</span>
+              <span>Премиум</span>
+            </div>
+            <h3>Великолепная Япония: Токио, Киото и Осака</h3>
+            <div class="tour-features">
+              <span><i class="fas fa-calendar-day"></i> 14 дней</span>
+              <span><i class="fas fa-user-friends"></i> до 8 человек</span>
+              <span><i class="fas fa-star"></i> 4.9 (42)</span>
+            </div>
+            <p class="tour-description">Погрузитесь в уникальную культуру Японии, где современные технологии сочетаются с древними традициями. Живописные храмы, сады и современная архитектура.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-value">от 195 000 ₽</span>
+                <span class="price-per">на человека</span>
+              </div>
+              <a href="#contact" class="btn primary small">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all">
+        <a href="#" class="btn primary">Смотреть все туры</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="container">
+    <div class="section-header">
+      <h2>Почему выбирают нас</h2>
+      <p>Мы создаем незабываемые впечатления и заботимся о каждой детали вашего путешествия</p>
+    </div>
+    
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>15 лет опыта</h3>
+        <p>Мы работаем в сфере туризма с 2008 года и знаем все секреты идеального отдыха</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-hand-holding-heart"></i>
+        </div>
+        <h3>Забота о клиентах</h3>
+        <p>Индивидуальный подход к каждому путешественнику и поддержка 24/7 во время поездки</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-wallet"></i>
+        </div>
+        <h3>Лучшие цены</h3>
+        <p>Прямые контракты с отелями и транспортными компаниями позволяют предлагать оптимальные цены</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-route"></i>
+        </div>
+        <h3>Уникальные маршруты</h3>
+        <p>Мы создаем авторские маршруты, недоступные для массового туризма</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <div class="section-header">
+      <h2>Наши услуги</h2>
+      <p>Полный спектр туристических услуг для идеального путешествия</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-globe"></i>
+        <h3>Групповые туры</h3>
+        <p>Присоединяйтесь к нашим групповым турам с русскоговорящим гидом и познакомьтесь с новыми людьми.</p>
+      </div>
+      
+      <div class="service-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Индивидуальные туры</h3>
+        <p>Разработаем уникальный маршрут специально для вас с учетом всех ваших пожеланий и предпочтений.</p>
+      </div>
+      
+      <div class="service-card">
+        <i class="fas fa-hotel"></i>
+        <h3>Бронирование отелей</h3>
+        <p>Подберем и забронируем идеальный отель в любой точке мира по специальным ценам.</p>
+      </div>
+      
+      <div class="service-card">
+        <i class="fas fa-plane"></i>
+        <h3>Авиабилеты</h3>
+        <p>Найдем и забронируем выгодные авиабилеты на регулярные и чартерные рейсы.</p>
+      </div>
+      
+      <div class="service-card">
+        <i class="fas fa-car"></i>
+        <h3>Транспортные услуги</h3>
+        <p>Организуем трансферы, аренду автомобилей и экскурсионное обслуживание в любой стране.</p>
+      </div>
+      
+      <div class="service-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Страхование</h3>
+        <p>Оформим туристическую страховку с оптимальным покрытием для безопасного путешествия.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container">
+    <div class="section-header">
+      <h2>Отзывы наших клиентов</h2>
+      <p>Что говорят о нас путешественники, выбравшие нашу компанию</p>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonial-card active">
+        <div class="testimonial-content">
+          <p>"Потрясающий опыт путешествия в Японию! Отличная организация, интересные экскурсии и великолепные отели. Все было продумано до мелочей, и нам не пришлось ни о чем беспокоиться. Обязательно будем обращаться в МирТур снова!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Елена Смирнова">
+          <div>
+            <h4>Елена Смирнова</h4>
+            <p>Тур "Великолепная Япония"</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Мы с мужем выбрали тур на Мальдивы для празднования годовщины свадьбы. Это было просто незабываемо! Прекрасный отель, восхитительные пейзажи и безупречный сервис. Спасибо команде МирТур за организацию идеального отдыха!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Анна Петрова">
+          <div>
+            <h4>Анна Петрова</h4>
+            <p>Тур "Райский отдых на Мальдивах"</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Треккинг в Непале стал одним из самых ярких приключений в моей жизни! Профессиональные гиды, безопасные маршруты и потрясающие виды. Особенно впечатлил индивидуальный подход и то, как оперативно решались все вопросы во время поездки."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Алексей Иванов">
+          <div>
+            <h4>Алексей Иванов</h4>
+            <p>Тур "Треккинг в Непале"</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1542304074-9c8ce93b52fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=800&q=80" alt="Наша команда">
+      </div>
+      <div class="about-text">
+        <div class="section-header left-align">
+          <h2>О компании МирТур</h2>
+          <p>Мы создаем путешествия, о которых вы будете вспоминать всю жизнь</p>
+        </div>
+        <p>Компания МирТур основана в 2008 году командой профессионалов и энтузиастов путешествий. За 15 лет работы мы организовали более 10 000 туров и помогли нашим клиентам открыть для себя более 70 стран мира.</p>
+        <p>Наша миссия — делать путешествия доступными, безопасными и незабываемыми. Мы не просто продаем туры, мы создаем впечатления и помогаем воплощать мечты.</p>
+        <ul class="about-features">
+          <li><i class="fas fa-check"></i> Команда опытных специалистов по туризму</li>
+          <li><i class="fas fa-check"></i> Официальный партнер ведущих туроператоров</li>
+          <li><i class="fas fa-check"></i> Собственные представители в популярных странах</li>
+          <li><i class="fas fa-check"></i> Гарантия лучшей цены и безопасности</li>
+        </ul>
+        <a href="#contact" class="btn primary">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="section-header left-align">
+            <h2>Контактная информация</h2>
+            <p>Свяжитесь с нами любым удобным способом</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Адрес</h4>
+                <p>г. Москва, ул. Арбат, 10, офис 305</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Телефон</h4>
+                <p>+7 (495) 123-45-67</p>
+                <p>+7 (901) 123-45-67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@mirtour.ru</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Время работы</h4>
+                <p>Пн-Пт: 10:00 - 20:00</p>
+                <p>Сб: 11:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <h3>Получить консультацию</h3>
+          <p>Заполните форму, и наш менеджер свяжется с вами в ближайшее время</p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="example@mail.ru">
+            </div>
+            <div class="form-group">
+              <label for="destination-select">Интересующее направление</label>
+              <select id="destination-select">
+                <option value="">Выберите направление</option>
+                <option value="europe">Европа</option>
+                <option value="asia">Азия</option>
+                <option value="africa">Африка</option>
+                <option value="namerica">Северная Америка</option>
+                <option value="samerica">Южная Америка</option>
+                <option value="australia">Австралия и Океания</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" placeholder="Расскажите подробнее о ваших пожеланиях..." rows="4"></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy" required>
+              <label for="privacy">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="btn primary">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="container">
+    <div class="newsletter-box">
+      <div class="newsletter-content">
+        <h3>Подпишитесь на наши новости</h3>
+        <p>Получайте лучшие предложения и новости о горящих турах первыми</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Ваш email" required>
+        <button type="submit" class="btn primary">Подписаться</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Мир<span>Тур</span></h3>
+          <p>Путешествуйте с удовольствием, путешествуйте с нами!</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="#hero">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#tours">Туры</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Направления</h4>
+            <ul>
+              <li><a href="#">Европа</a></li>
+              <li><a href="#">Азия</a></li>
+              <li><a href="#">Африка</a></li>
+              <li><a href="#">Северная Америка</a></li>
+              <li><a href="#">Южная Америка</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <ul class="contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Арбат, 10</li>
+              <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+              <li><i class="fas fa-envelope"></i> info@mirtour.ru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 МирТур. Все права защищены.</p>
+        <div class="footer-legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
